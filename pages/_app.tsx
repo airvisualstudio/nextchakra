@@ -10,6 +10,4 @@ function MyApp({Component, pageProps} : { Component: any, pageProps: any }) {
 
 export default MyApp
 
-function test({a} : { a: any}) {
-
 
