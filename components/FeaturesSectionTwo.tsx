@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { Box, SimpleGrid, Icon, Text, Stack, Flex } from '@chakra-ui/react';
+import { Container, Box, SimpleGrid, Icon, Text, Stack, Flex, Button, Link } from '@chakra-ui/react';
 import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
 
 interface FeatureProps {
@@ -30,6 +30,7 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 
 export default function SimpleThreeColumns() {
   return (
+    <Container maxW={'7xl'} py={12}>
     <Box p={4}>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature
@@ -53,7 +54,11 @@ export default function SimpleThreeColumns() {
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
           }
         />
+        <Button>
+        Mau Dong Link nya
+        </Button>
       </SimpleGrid>
     </Box>
+    </Container>
   );
 }
