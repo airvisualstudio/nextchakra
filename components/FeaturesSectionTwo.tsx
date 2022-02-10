@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { Container, Box, SimpleGrid, Icon, Text, Stack, Flex, Button, Link } from '@chakra-ui/react';
+import { Container, Box, SimpleGrid, Icon, Text, Stack, Flex, Button, HStack } from '@chakra-ui/react';
 import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
 
 interface FeatureProps {
@@ -55,8 +55,17 @@ export default function SimpleThreeColumns() {
           }
         />
         <Button>
-        Mau Dong Link nya
+          Mau Dong Link nya
         </Button>
+
+        <HStack >
+          <Button colorScheme='facebook' leftIcon={<Icon as={FcInTransit} w={10} h={10} />}>
+            Facebook
+          </Button>
+          <Button colorScheme='twitter' leftIcon={<Icon as={FcInTransit} w={10} h={10} />}>
+            Twitter
+          </Button>
+        </HStack>
       </SimpleGrid>
     </Box>
     </Container>
