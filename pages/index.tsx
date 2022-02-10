@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import Document, { Html } from 'next/document'
+import Html from 'next/document';
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
@@ -17,7 +17,7 @@ export default function Home() {
         <meta name="description" content="Airvisual Creative Studio,  The Other, Digital Marketing 
         Agency from Bandung, 
         West Java, Indonesia">
-          
+
         </meta>
       </Head>
       <Head>
